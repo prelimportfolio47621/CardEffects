@@ -11,26 +11,26 @@
 </head>
 <body>
     <section class="container glass-tilt">
-        <div class="row d-flex justify-content-center">
-            <div class="card text-center">
+        <div class="row justify-content-center">
+            <div class="card text-center rounded">
                 <div class="card-body d-flex justify-content-center align-items-center flex-column">
-                    <h2>01</h2>
+                    <h2 class="position-absolute">01</h2>
                     <h3 class="card-title">Card One</h3>
                     <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     <a class="card-link" href="#">Read More</a>
                 </div>
             </div>
-            <div class="card text-center">
+            <div class="card text-center rounded">
                 <div class="card-body d-flex justify-content-center align-items-center flex-column">
-                    <h2>02</h2>
+                    <h2 class="position-absolute">02</h2>
                     <h3 class="card-title">Card Two</h3>
                     <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     <a class="card-link" href="#">Read More</a>
                 </div>
             </div>
-            <div class="card text-center">
+            <div class="card text-center rounded">
                 <div class="card-body d-flex justify-content-center align-items-center flex-column">
-                    <h2>03</h2>
+                    <h2 class="position-absolute">03</h2>
                     <h3 class="card-title">Card Three</h3>
                     <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     <a class="card-link" href="#">Read More</a>
@@ -38,26 +38,32 @@
             </div>
         </div>
     </section>
-    <section class="container three-dim-stack">
-        <div class="row">
-            <div class="card align-content-center">
-                <h3 class="card-title text-center">Card One</h3>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <a class="card-link" href="#">Read More</a>
+    <section class="container d-flex justify-content-center three-dim-stack">
+        <div class="row position-relative justify-content-center">
+            <div class="card position-absolute text-center" style="--i: -1;">
+                <div class="card-body d-flex justify-content-center flex-column">
+                    <h3 class="card-title text-center">Card One</h3>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a class="card-link" href="#">Read More</a>
+                </div>
             </div>
-            <div class="card align-content-center">
-                <h3 class="card-title">Card Two</h3>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <a class="card-link" href="#">Read More</a>
+            <div class="card text-center" style="--i: 0;">
+                <div class="card-body d-flex justify-content-center flex-column">
+                    <h3 class="card-title text-center">Card Two</h3>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a class="card-link" href="#">Read More</a>
+                </div>
             </div>
-            <div class="card align-content-center">
-                <h3 class="card-title">Card Three</h3>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <a class="card-link" href="#">Read More</a>
+            <div class="card position-absolute text-center" style="--i: 1;">
+                <div class="card-body d-flex justify-content-center flex-column">
+                    <h3 class="card-title text-center">Card Three</h3>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a class="card-link" href="#">Read More</a>
+                </div>
             </div>
         </div>
     </section><section class="container clipped-image">
-        <div class="row">
+        <div class="row justify-content-center">
             <div class="card card-1">
                 <div class="img-container">
                     <img src="" alt="">
