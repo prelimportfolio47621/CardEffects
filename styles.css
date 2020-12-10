@@ -59,13 +59,10 @@ body {
 
 /* Three dimensional stack */
 
-.three-dim-stack .row {
-    max-width: 250px;
-}
-
 .three-dim-stack .row .card {
     top: calc(var(--i) * 40px);
     margin: 70px;
+    width: 250px;
     /* max-width: 250px; */
     height: 340px;
     transform: rotate(40deg) skew(-20deg, -10deg) translateX(0);
