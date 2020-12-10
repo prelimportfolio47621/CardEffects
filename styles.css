@@ -76,5 +76,4 @@ body {
 .three-dim-stack .row:hover .card {
     top: 0;
     transform: rotate(0) skew(0, 0) translateX(calc(var(--i) * 320px));
-    z-index: 1;
 }
