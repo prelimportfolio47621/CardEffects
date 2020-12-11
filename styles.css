@@ -74,3 +74,11 @@ body {
     top: 0;
     transform: rotate(0) skew(0, 0) translateX(calc(var(--i) * 320px));
 }
+
+
+/* 3d Flip */
+
+.flip-around .card {
+    width: 250px;
+    height: 350px;
+}
