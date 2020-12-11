@@ -78,7 +78,57 @@ body {
 
 /* 3d Flip */
 
-.flip-around .card {
+.flip-around .row .card {
+    background: inherit;
     width: 250px;
     height: 350px;
+    margin: 30px;
+    padding: 0;
+}
+
+.flip-around .row .card .front,
+.flip-around .row .card .back {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transition: 0.6s linear;
+    backface-visibility: hidden;
+}
+
+.flip-around .row .card .front {
+    transform: perspective(450px) rotateY(0deg);
+}
+
+.flip-around .row .card .front img {
+    height: 100%;
+}
+
+.flip-around .row .card .back {
+    background: #fff;
+    transform: perspective(450px) rotateY(180deg);
+}
+
+.flip-around .row .card:hover .front {
+    transform: perspective(450px) rotateY(-180deg);
+}
+
+.flip-around .row .card:hover .back {
+    transform: perspective(450px) rotateY(0deg);
+}
+
+.flip-around .row .card .back .sm-links a {
+    color: #2c3e50;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: 0.4s linear;
+}
+
+.flip-around .row .card .back .sm-links a:hover {
+    background: #2c3e50;
+    color: #fff;
+    width: 40px;
+    height: 40px;
 }
