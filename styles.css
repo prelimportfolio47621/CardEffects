@@ -78,11 +78,16 @@ body {
 
 /* 3d Flip */
 
+.flip-around {
+    background: linear-gradient(to right, #fdc830, #f37335);
+}
+
 .flip-around .row .card {
     background: inherit;
     width: 250px;
     height: 350px;
-    margin: 30px;
+    margin-top: 80px;
+    margin-bottom: 80px;
     padding: 0;
 }
 
